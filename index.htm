@@ -4,20 +4,33 @@
     <link rel="stylesheet" href="Styles.css">
 
 </head>
-<body>
-    <h1 class="header">My Practice Project</h1>
+<body style="background-color: var(--main-color);">
 
-
-    <div class="navbar">
-        <a href="https://www.youtube.com/watch?v=gwUz3E9AW0w">You need a Website!</a>
-        <a href="./about-me.html">Here is some stuff about me.</a>
-        <a href="./task-list.html">My list of tasks.</a>
+    <div>
+        <div class="navbar">
+                <p>Hi</p>
+                <p>Hi</p>
+                <p>Hi</p>
+        </div>
     </div>
+        <div class="navbar">
+            <a href="https://www.youtube.com/watch?v=gwUz3E9AW0w">You need a Website!</a>
+            <a href="./about-me.html">Here is some stuff about me.</a>
+            <a href="./task-list.html">My list of tasks.</a>
+        </div>
+        <div class="header"><h1>My Practice Project</h1></div>
+        
+
+        
+
+    
+
+    
 
     <h2 style="text-align:center;">Here are some pictures of kitties!</h2>
 
     <hr class="horizontal">
-    
+
     <div class="row">
         <div class="content">
             <h4 style="text-align: center;">This is Napoleon</h4>
@@ -25,8 +38,8 @@
                 <img src="./Images/IMG_0808.JPG" alt="Napoleon!">
                 <img src="./Images/IMG_0826.JPG" alt="Napoleon!">
             </div><!--        <img src="https://practicingproject.w3spaces.com/IMG_0826.jpg" alt="Napoleon!" width="auto" height="65%"> -->
-        <p>Napoleon is a Norwegian Forest Cat.</p>
-        <p>He is officially a blue bicolour and I got him from Catsi in Greve when he was a tiny little kitten.</p>
+            <p>Napoleon is a Norwegian Forest Cat.</p>
+            <p>He is officially a blue bicolour and I got him from Catsi in Greve when he was a tiny little kitten.</p>
         </div>
 
         <div class="content">
@@ -41,9 +54,9 @@
     </div>
 
     <h2>Let's play with a slideshow</h2>
-    
+
     <hr class="horizontal">
-    
+
     <div class="slideshow-container">
 
         <!-- Full images with numbers and message Info -->
@@ -80,16 +93,17 @@
         <!-- Back and forward buttons -->
         <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
         <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+        <!-- The circles/dots -->
+        <div class="dots-container" style="text-align:center; margin: 0 auto;">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+            <span class="dots" onclick="currentSlide(5)"></span>
+        </div>
     </div>
 
-    <!-- The circles/dots -->
-    <div style="text-align:center;">
-        <span class="dots" onclick="currentSlide(1)"></span>
-        <span class="dots" onclick="currentSlide(2)"></span>
-        <span class="dots" onclick="currentSlide(3)"></span>
-        <span class="dots" onclick="currentSlide(4)"></span>
-        <span class="dots" onclick="currentSlide(5)"></span>
-    </div>
+    
 
     <script src="Scripts.js"></script>
 </body>
